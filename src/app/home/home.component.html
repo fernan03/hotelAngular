@@ -1,0 +1,33 @@
+<section>
+    <app-menu></app-menu>
+</section>
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <app-formareselva></app-formareselva>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
+    <app-descrpcion></app-descrpcion>
+</section>
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md2 g3">
+
+        <div class="col" *ngFor="let habitacion of habitaciones">
+            <div class="card h-100 shadow">
+                <img src={{habitacion.fotografias[0]}} alt="" class="img-fluid w-100 h-100">
+                <h3 class="text-center fw-bold">{{habitacion.nombre}}</h3>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+<section>
+    <app-footer></app-footer>
+</section>
